@@ -7,4 +7,5 @@ resource "aws_ecs_task_definition" "task_definition" {
   cpu                      = var.cpu
   memory                   = var.memory
   task_role_arn            = var.task_role_arn
+  execution_role_arn       = var.execution_role_arn
 }

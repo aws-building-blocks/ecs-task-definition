@@ -54,3 +54,8 @@ variable "task_role_arn" {
   description = "(Optional) ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services."
   default     = null
 }
+
+variable "execution_role_arn" {
+  type        = string
+  description = "(Optional) ARN of the task execution role that the Amazon ECS container agent and the Docker daemon can assume."
+}
